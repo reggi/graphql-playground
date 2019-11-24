@@ -112,7 +112,7 @@ interface ISettings {
 ```
 
 - `schema` [`IntrospectionResult`](optional) - The result of an introspection query (an object of this form: `{__schema: {...}}`) The playground automatically fetches the schema from the endpoint. This is only needed when you want to override the schema.
-- `tabs` [`Tab[]`](optional) - An array of tabs to inject. **Note: When using this feature, tabs will be resetted each time the page is reloaded**
+- `tabs` [`Tab[]`](https://github.com/prisma-labs/graphql-playground/blob/master/packages/graphql-playground-react/src/state/sessions/reducers.ts#L38-L45) - An array of tabs to inject. **Note: When using this feature, tabs will be resetted each time the page is reloaded**
 
 ```ts
 interface Tab {
